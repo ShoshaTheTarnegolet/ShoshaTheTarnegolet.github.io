@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Shosha The Tarnegolet" />
+    <meta property="og:description" content="Hello, I'm Shosha The Tarnegolet ...." />
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Spartan:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src='https://kit.fontawesome.com/d8ab0e903f.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+    <title>Shosha The Tarnegolet</title>
+  </head>
+  <body>
+<header class="container-fluid sticky-top">
+
+            <navbar class="navbar navbar-expand-lg" id="nav">
+              <div class="nav-link-group">
+                <button id='nav-button' class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+                      <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+
+                                <path
+                                      class="line top"
+                                      d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path
+                                      class="line middle"
+                                      d="m 30,50 h 40" />
+                                <path
+                                      class="line bottom"
+                                      d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+
+                          </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+            </div>
+        <div class="icon-group d-flex align-items-center">
+                    <ul class="d-flex flex-row">
+                      <li>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/evgeniia-khechueva/" target="_blank" title="LinkedIn"></a>
+                      </li>
+                        <li>
+                          <a class="fa fa-github" href="https://github.com/ShoshaTheTarnegolet" target="_blank" title="GitHub"></a>
+                        </li>
+                        <li>
+                          <a class="fa fa-codepen" href="https://codepen.io/ShoshaTheTarnegolet" target="_blank" title='Codepen'></a>
+                        </li>
+                        <li>
+                          <a class="fa fa-facebook" href="https://www.facebook.com/shoshathetarnegolet/" target="_blank" title='Facebook'></a>
+                        </li>
+                      </ul>
+        </div>
+              </div>
+            </navbar>
+</header>
+    <!-- header -->
+    <div class="container-fluid">
+    <section class="d-flex flex-column" id="about">
+                      <div class="d-flex flex-column flex-grow-3 ">
+                        <h1 class="head-title">Hello, I'm Jenny</h1>
+                        <p class="info ">In 2017 I made an aliyah from Russia. Moving to Israel gave me the opportunity to change my life and find an area in which I would prefer to work and grow.
+                          I became interested in web development, because it combines various elements like creativity, technology, scientific research. Therefore you can learn new things and complete new tasks in different areas. It only depends on your imagination where you will develop.
+                          At the end of 2020 I started learning HTML, CSS and JS on my own and since August I have taken Front-end web development courses at ITC academy.
+                          Now I am looking for a junior position job in Front-end
+                        </p>
+                      </div>
+                      <div class="d-flex gap-5 flex-md-nowrap flex-lg-nowrap flex-wrap">
+
+                      <div>
+                          <h2 class='header'>Skills</h2>
+                              <p class="info">Javascript, React, jQuery
+                                CSS, HTML
+                                GitHub, Terminal, Bash
+                                Firebase
+                                Adobe Photoshop, Adobe Illustrator,
+                                </p>
+                      </div>
+
+                       <div class="ms-lg-5">
+                          <h2 class='header'>Education and Experience</h2>
+                              <p class="info"><span class="info-year">2019 - 2021</span>  Project Assistant, Milim Writing & Translation Services
+                                I was an email secretary: I received all emails, that were sent to our department and followed all the correspondence about the orders. I started each new job, accompanied it during the whole process until the final completion of the job.
+                                </p>
+                                <p class="info">
+                                  <span class="info-year">Dec.2020 - Aug.2021</span> Self-education
+                                </p>
+                                <p class="info">
+                                  <span class="info-year">Aug. - Nov.2021</span> Front-end Development Program, Israel Tech Challenge
+                                </p>
+                       </div>
+                      </div>
+                   <div> <button class="button download-btn"><span><i class="fas fa-download"></i> CV</span></button></div>
+    </section>
+    <!-- about ends -->
+    <section class="projects" id="projects">
+        <h1 class="head-title">Projects</h1>
+        <div class="project-card-container row d-flex align-items-center justify-content-evenly">
+          <div class="project-card col-md-3 col-sm-12">
+            <div  class="card-body">
+                <h5 class="card-title ">React Note App</h5>
+            <div class='card-image-link'>    <a href="https://github.com/ShoshaTheTarnegolet/react-note-app" class="card-link" target="_blank"><img src="./img/note-app.jpg" class="card-img" alt="react-note-app"></a></div>
+           </div>
+          </div>
+          <div class="project-card  col-md-3 col-sm-12">
+            <div  class="card-body">
+                <h5 class="card-title">React Twitter Clone App</h5>
+                <div class='card-image-link'>    <a href="https://github.com/ShoshaTheTarnegolet/twitter-clone-app" class="card-link" target="_blank"><img src="./img/tw-clone.jpg" class="card-img" alt="twitter-clone-app"></a></div>
+           </div>
+          </div>
+          <div class="project-card  col-md-3 col-sm-12">
+            <div  class="card-body">
+                <h5 class="card-title">Stock Exchange Project</h5>
+                <div class='card-image-link'>    <a href="https://stock-exchange-project.pages.dev//" class="card-link" target="_blank"><img src="./img/stock.jpg" class="card-img" alt="stock-exchange-project"></a></div>
+           </div>
+          </div>
+          <div class="project-card  col-md-3 col-sm-12">
+            <div  class="card-body">
+                <h5 class="card-title">Dashboard Project</h5>
+                <div class='card-image-link'>    <a href="https://codepen.io/ShoshaTheTarnegolet/pen/ZEyXWVR" class="card-link" target="_blank"><img src="./img/dashboard.jpg" class="card-img" alt="dashboard project"></a></div>
+           </div>
+          </div>
+
+        </div>
+    </section>
+       <!-- /.projects -->
+       <section class="contact" id="contact">
+        <h1 class="head-title">Contact Me!</h1>
+        <p class="lead">Also you can send me an email to <span>ekhechueva@gmail.com</span> or call me at <span>05392878961</span></p>
+        <div class="contact-form">
+            <form class="row g-3" method='POST' action="https://formspree.io/f/xqkwrvnl">
+              <div class="text-input col-md-6">
+                <input type="text" name="fname" id="name" placeholder="First Name" required/>
+                <span class="separator" required> </span>
+              </div>
+              <div class="text-input col-md-6">
+                  <input type="text" name="lname" id="name" placeholder="Last Name" />
+                  <span class="separator"> </span>
+                </div>
+
+              <div class="text-input col-md-6">
+                <input type="email" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" size="30" required />
+                <span class="separator"> </span>
+              </div>
+              <div class="text-input col-md-6">
+                  <input type="tel" name="phone" id="phone" placeholder="Phone"  required/>
+                  <span class="separator"> </span>
+                </div>
+
+              <div class="text-input">
+                  <textarea name="message" class="form-control" placeholder="Leave your text here" id="message"></textarea>
+                <span class="separator"> </span>
+              </div>
+
+              <div class="form-bottom">
+                <button type="submit" class="button submit-btn"><span>Send</span></button>
+              </div>
+            </form>
+          </div>
+          <!-- form -->
+       </section>
+       <!-- footer -->
+</div>
+<footer class="footer">
+    <div class="container d-flex flex-column">
+<p>      &copy; Shosha The Tarnegolet 2021</p>
+    <p>  Israel</p>
+  <p>    All rights reserved</p>
+    </div>
+  </footer>
+  <!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAwK62roMtYmHhfKJrj_IN9PeVxmOCfrKU",
+      authDomain: "shoshathetarnegolet.firebaseapp.com",
+      projectId: "shoshathetarnegolet",
+      storageBucket: "shoshathetarnegolet.appspot.com",
+      messagingSenderId: "586990792212",
+      appId: "1:586990792212:web:c05fba9e0a32a7f594c101",
+      measurementId: "G-V5GJDRPDWQ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script> -->
+  </body>
+</html>
