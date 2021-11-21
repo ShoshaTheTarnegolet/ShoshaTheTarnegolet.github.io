@@ -263,7 +263,6 @@ form .text-input {
   overflow: hidden;
   margin-bottom: 0.875em;
 }
-
 form #name,
 #email,
 #message,
@@ -276,6 +275,11 @@ form #name,
   font-weight: 400;
   border: none;
   border-bottom: 1px solid var(--light-gray);
+}
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #name:focus + .separator,
 #email:focus + .separator,
