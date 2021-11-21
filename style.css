@@ -125,7 +125,7 @@ header {
 }
 #nav ul li a:active,
 .icon-group ul a:active {
-  color: #e83611;
+  color: var(--color-4);
   transition: color 0.3s ease;
 }
 .icon-group ul {
@@ -226,8 +226,15 @@ header {
   text-align: center;
   font-weight: 500;
 }
-#contact .lead > span {
+#contact .lead > a {
   color: var(--color-3);
+  text-decoration: none;
+}
+#contact .lead > a:hover {
+  color: var(--color-1);
+}
+#contact .lead > a:active {
+  color: var(--color-4);
 }
 .contact-form {
   background: white;
@@ -318,7 +325,7 @@ form #name,
   outline: none;
 }
 .download-btn {
-  background: linear-gradient(0deg, #6fa3d3 0%, #186cb8 100%);
+  background: linear-gradient(0deg, #6fa3d3 0%, var(--color-1) 100%);
   line-height: 42px;
   padding: 0;
   border: none;
@@ -329,12 +336,12 @@ form #name,
   content: '';
   right: 0;
   bottom: 0;
-  background: #186cb8;
+  background: var(--color-1);
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 .download-btn:hover {
-  color: #186cb8;
+  color: var(--color-1);
   background: transparent;
 }
 .download-btn span:before,
@@ -343,7 +350,7 @@ form #name,
   content: '';
   left: 0;
   top: 0;
-  background: #186cb8;
+  background: var(--color-1);
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
@@ -427,7 +434,7 @@ footer {
   bottom: 0;
   z-index: -10;
   padding: 1rem 0;
-  background-image: linear-gradient(70deg, #186cb8 15%, #2a9a9f 35%, #f1b211 55%, #e83611 80%, #f9002f);
+  background-image: linear-gradient(70deg, var(--color-1) 15%, var(--color-2) 35%, var(--color-3) 55%, var(--color-4) 80%, var(--color-5));
   text-align: center;
   color: #fff;
 }
