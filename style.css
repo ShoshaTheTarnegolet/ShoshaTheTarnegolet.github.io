@@ -4,13 +4,12 @@
   --color-3: #f1b211;
   --color-4: #e83611;
   --color-5: #f9002f;
-  --light-gray: #999;
   --bright-blue: #bbdefb;
+  --bright-orange: #fb4b02;
 }
 html {
   scroll-behavior: smooth;
   height: 100%;
-  font: 400 1rem/1.5 'Spartan', sans-serif !important;
   scroll-padding-top: 90px;
 }
 body {
@@ -45,6 +44,7 @@ header {
 #nav-button {
   box-shadow: none;
 }
+/*  hamburger */
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -79,6 +79,7 @@ header {
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
+/* nav links */
 #nav ul li,
 .icon-group {
   list-style: none;
@@ -207,7 +208,6 @@ header {
     transform: none;
   }
 }
-
 .card-title {
   font-weight: 600;
   text-transform: uppercase;
@@ -236,6 +236,7 @@ header {
 #contact .lead > a:active {
   color: var(--color-4);
 }
+/* contact form */
 .contact-form {
   background: white;
   margin: auto;
@@ -281,7 +282,7 @@ form #name,
   font-size: 1.2em;
   font-weight: 400;
   border: none;
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid #999;
 }
 #phone::-webkit-outer-spin-button,
 #phone::-webkit-inner-spin-button {
@@ -302,13 +303,13 @@ form #name,
   outline-color: transparent;
   outline-style: none;
 }
-
 .form-bottom {
   margin-top: 1.25em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+/* buttons */
 .button {
   width: 130px;
   height: 40px;
@@ -355,7 +356,7 @@ form #name,
   transition: all 0.3s ease;
 }
 .submit-btn {
-  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+  background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, var(--bright-orange) 100%);
   line-height: 42px;
   padding: 0;
   border: none;
@@ -373,7 +374,7 @@ form #name,
   content: '';
   right: 0;
   bottom: 0;
-  background: rgba(251, 75, 2, 1);
+  background: var(--bright-orange);
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
@@ -388,7 +389,7 @@ form #name,
   height: 2px;
 }
 .submit-btn:hover {
-  color: rgba(251, 75, 2, 1);
+  color: var(--bright-orange);
   background: transparent;
 }
 .submit-btn:hover:before,
@@ -405,11 +406,10 @@ form #name,
   content: '';
   left: 0;
   top: 0;
-  background: rgba(251, 75, 2, 1);
+  background: var(--bright-orange);
   box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 .submit-btn span:before,
 .download-btn span:before {
   width: 2px;
@@ -428,6 +428,7 @@ form #name,
 .download-btn span:hover:after {
   width: 100%;
 }
+/* footer */
 footer {
   position: sticky;
   min-width: 100%;
