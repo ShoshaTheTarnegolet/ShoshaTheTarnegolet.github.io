@@ -271,7 +271,7 @@ form .text-input {
   overflow: hidden;
   margin-bottom: 0.875em;
 }
-form #name,
+form #name, #lname,
 #email,
 #message,
 #phone {
@@ -290,6 +290,7 @@ form #name,
   margin: 0;
 }
 #name:focus + .separator,
+#lname:focus + .separator,
 #email:focus + .separator,
 #message:focus + .separator,
 #phone:focus + .separator {
