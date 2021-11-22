@@ -11,16 +11,17 @@
   };
 
   firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
   const ref = firebase.database().ref('messages');
+  const name = document.getElementById('name');
+  const lname = document.getElementById('lname');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const msg = document.getElementById('message');
 
   const contact_submit = (e) => {
     e.preventDefault();
-    const name = document.getElementById('name');
-    const lname = document.getElementById('lname');
-    const email = document.getElementById('email');
-    const phone = document.getElementById('phone');
-    const msg = document.getElementById('message');
 
     const data = {
       name: name.value,
@@ -30,8 +31,10 @@
       msg: msg.value,
       date: new Date().toLocaleString(),
     };
+
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
     if (name.value === '' || email.value === '' || phone.value === '') {
       alert('Please enter equired data');
     } else if (!email.value.match(mailformat)) {
