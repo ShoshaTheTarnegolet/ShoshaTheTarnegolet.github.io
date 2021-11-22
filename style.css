@@ -213,6 +213,12 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
+@media (max-width: 925px) {
+  .card-title {
+    font-size: calc(0.7rem + 1vw);
+  }
+}
+
 .project-card:hover {
   box-shadow: 0 7px 9px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
@@ -271,7 +277,8 @@ form .text-input {
   overflow: hidden;
   margin-bottom: 0.875em;
 }
-form #name, #lname,
+form #name,
+#lname,
 #email,
 #message,
 #phone {
