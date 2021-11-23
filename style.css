@@ -211,9 +211,11 @@ header {
 .card-title {
   font-weight: 600;
   text-transform: uppercase;
+  word-spacing: 0.2rem;
   text-align: center;
+  font-size: calc(0.7rem + 0.5vw);
 }
-@media (max-width: 925px) {
+@media (max-width: 750px) {
   .card-title {
     font-size: calc(0.7rem + 1vw);
   }
