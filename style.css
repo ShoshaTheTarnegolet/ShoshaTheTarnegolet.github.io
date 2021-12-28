@@ -145,6 +145,9 @@ header {
   font-weight: 600;
   text-transform: uppercase;
 }
+.head-subtitle {
+  text-align: center;
+}
 .info {
   white-space: pre-line;
   margin: 0;
