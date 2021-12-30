@@ -218,9 +218,6 @@ header {
   text-align: center;
   font-size: calc(0.7rem + 0.5vw);
 }
-.card-title span{
-  font-size:.7rem;
-}
 @media (max-width: 750px) {
   .card-title {
     font-size: calc(0.7rem + 1vw);
