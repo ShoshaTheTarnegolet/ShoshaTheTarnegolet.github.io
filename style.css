@@ -148,11 +148,12 @@ header {
 .head-subtitle {
   text-align: center;
 }
-.skills {
+.skills{
   display: flex;
-  gap: 5%;
+  gap: 1rem;
 }
 .info {
+
   margin: 0;
 }
 .info-year {
