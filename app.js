@@ -13,6 +13,10 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+  /* const info_head_title = document.querySelector('.head-title');
+const info_head_subtitle = document.querySelector('.head-subtitle');
+const info_head_paragraph = document.querySelector('.info'); */
+
   const ref = firebase.database().ref('messages');
   const name = document.getElementById('name');
   const lname = document.getElementById('lname');

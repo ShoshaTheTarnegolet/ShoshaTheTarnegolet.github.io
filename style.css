@@ -148,8 +148,12 @@ header {
 .head-subtitle {
   text-align: center;
 }
+.skills {
+  display: flex;
+  gap: 5%;
+}
 .info {
-  white-space: pre-line;
+  /*   white-space: pre-line; */
   margin: 0;
 }
 .info-year {
@@ -218,8 +222,8 @@ header {
   text-align: center;
   font-size: calc(0.7rem + 0.5vw);
 }
-.card-title span{
-  font-size:.7rem;
+.card-title span {
+  font-size: 0.7rem;
 }
 @media (max-width: 750px) {
   .card-title {
