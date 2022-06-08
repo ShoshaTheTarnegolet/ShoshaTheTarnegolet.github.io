@@ -163,6 +163,10 @@ header {
   display: inline-block;
   margin-right: 1%;
 }
+.form-btn {
+  display: flex;
+  gap: 1rem;
+}
 /* projects */
 #projects {
   background-color: #fff;
